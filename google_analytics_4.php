@@ -40,6 +40,6 @@ class ZPGoogleAnalytics4Options {
 
 class ZPGoogleAnalytics4 {
   function putGaTag() {
-    echo('<!-- GATAG : ' + getOption('ZPGoogleAnalytics4_trackingID') + ' -->');
+    echo('<!-- GATAG : ' . getOption('ZPGoogleAnalytics4_trackingID') . ' -->');
   }
 }
