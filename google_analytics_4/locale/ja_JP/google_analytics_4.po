@@ -1,24 +1,21 @@
-"Project-Id-Version: ZPGoogleAnalytics4\n"
+# Don't remove the two lines below, they're required for gettext to work correctly.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.4\n"
-"X-Poedit-KeywordsList: gettext_pl\n"
-"X-Poedit-Basepath: ../..\n"
-"X-Poedit-SearchPath-0: google_analytics_4.php\n"
-
-# Don't remove the two lines below, they're required for gettext to work correctly.
-#, fuzzy
-msgid ""
-msgstr ""
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: ja_JP\n"
 
 #: google_analytics_4.php:12
 msgid "Add Google Analytics 4 tracking code to Zenphoto."
-msgstr ""
+msgstr "ZenphotoにGoogle Analytics 4のトラッキングコードを追加します。"
 
 # Don't translate.
 #: google_analytics_4.php:16
@@ -27,12 +24,12 @@ msgstr ""
 
 #: google_analytics_4.php:17
 msgid "Google Analytics 4 properties need to be created."
-msgstr ""
+msgstr "Google Analytics 4のプロパティを作成する必要があります。"
 
 #: google_analytics_4.php:26
 msgid "Tracking ID"
-msgstr ""
+msgstr "収集ID"
 
 #: google_analytics_4.php:30
 msgid "Tracking ID of Google Analytics 4"
-msgstr ""
+msgstr "Google Analytics 4の収集ID"
