@@ -1,0 +1,15 @@
+# Don't remove the two lines below, they're required for gettext to work correctly.
+msgid ""
+msgstr ""
+
+msgid "Add Google Analytics 4 tracking code to Zenphoto."
+msgstr ""
+
+msgid "Google Analytics 4 properties need to be created."
+msgstr ""
+
+msgid "Tracking ID"
+msgstr ""
+
+msgid "Tracking ID of Google Analytics 4"
+msgstr ""
