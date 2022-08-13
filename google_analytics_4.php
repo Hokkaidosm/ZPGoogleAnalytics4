@@ -39,7 +39,30 @@ class ZPGoogleAnalytics4Options {
 }
 
 class ZPGoogleAnalytics4 {
+  function validateTrackingID($id) {
+    if (preg_match('/^UA-[0-9]{3,9}-[0-9]$/', $id)) {
+      return true;
+    } else if (preg_match('/^G-[A-Z0-9]+$/', $id)) {
+      return true;
+    }
+    return false;
+  }
+  
   function putGaTag() {
-    echo('<!-- GATAG : ' . getOption('ZPGoogleAnalytics4_trackingID') . ' -->');
+    $gaId = getOption('ZPGoogleAnalytics4_trackingID');
+    if (!self::validateTrackingID($gaId)) {
+      return;
+    }
+    ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo($gaId) ?>"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '<?php echo($gaId) ?>');
+</script>
+    <?php
   }
 }
